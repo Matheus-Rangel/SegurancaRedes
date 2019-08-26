@@ -1,0 +1,2 @@
+"-c" "C:\\Users\\mathe\\Pictures\\scrum.jpg" "data\\33.txt" "test.bmp"
+"-d" "test.bmp" "test.txt"
