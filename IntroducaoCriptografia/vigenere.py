@@ -16,6 +16,12 @@ def vigenere(txt, key, out):
     return result
 
 def main():
+    """
+    args:
+        argv 1: caminho do arquivo de texto criptografado
+        argv 2: caminho do arquivo onde a chave está gravada
+        argv 3: caminho do arquivo de saida onde o programa salvará o texto descriptografado
+    """
     txt = open(sys.argv[1]).read()
     key = open(sys.argv[2]).read()
     out = open(sys.argv[3], 'w')

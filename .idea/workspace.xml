@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d6bd2b0-aa87-4e48-96ed-a028c89fcbe9" name="Default Changelist" comment="" />
+    <list default="true" id="4d6bd2b0-aa87-4e48-96ed-a028c89fcbe9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroducaoCriptografia/cesar.py" beforeDir="false" afterPath="$PROJECT_DIR$/IntroducaoCriptografia/cesar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroducaoCriptografia/estenografia.py" beforeDir="false" afterPath="$PROJECT_DIR$/IntroducaoCriptografia/estenografia.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IntroducaoCriptografia/vigenere.py" beforeDir="false" afterPath="$PROJECT_DIR$/IntroducaoCriptografia/vigenere.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +35,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1PeRmZ7Gna24C9HjWfNGWgPQ00j" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/IntroducaoCriptografia/data" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -171,12 +182,23 @@
       <workItem from="1566316736428" duration="4663000" />
       <workItem from="1566322023389" duration="1012000" />
       <workItem from="1566323075372" duration="11900000" />
-      <workItem from="1566843356208" duration="1998000" />
+      <workItem from="1566843356208" duration="3410000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/sec$sec.coverage" NAME="sec Coverage Results" MODIFIED="1566318515183" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

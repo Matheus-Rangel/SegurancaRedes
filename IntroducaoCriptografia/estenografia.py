@@ -66,6 +66,15 @@ def estenografia_d(image):
 
 
 def main():
+    """
+    argv 1: modo de -d para ler o texto da imagem, -c para gravar o texto na imagem
+    argv 2: caminho da imagem
+    no modo -d
+    argv 3: caminho do arquivo onde o programa salvara o texto
+    no modo -c
+    argv 3: caminho do arquivo de texto que sera lido
+    argv 4: caminho da nova imagem gerada com o texto escondido
+    """
     if (sys.argv[1] == "-d"):
         image = cv2.imread(sys.argv[2], -1)
         txt = estenografia_d(image)

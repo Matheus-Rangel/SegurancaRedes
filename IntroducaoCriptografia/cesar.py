@@ -20,6 +20,11 @@ def cesar_bruteforce(txt, output_folder):
 
 
 if __name__ == '__main__':
+    """
+    args:
+        argv 1: caminho do arquivo txt criptografado
+        argv 2: caminho da pasta onde os resultados seram gravados
+    """
     file_path = sys.argv[1]
     output_folder = sys.argv[2]
     txt = open(file_path).read()
