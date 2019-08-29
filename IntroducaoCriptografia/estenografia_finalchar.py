@@ -20,9 +20,8 @@ def insert_bit(b, data):
 def estenografia_c(image, txt):
     old_shape = image.shape
     image = np.reshape(image, (np.prod(image.shape)))
-    txt = txt.encode('utf-8')
+    txt = (txt + chr(3)).encode('utf-8')
     byte_image_index = 0
-    txt.append(3)
     for byte_text_index in range(len(txt)):
         c = txt[byte_text_index]
         for i in range(8):
@@ -49,7 +48,7 @@ def estenografia_d(image):
             byte_image_index += 1
         txt.append(c)
         byte_image_index += 1
-    return txt.decode('utf-8', errors="replace")
+    return txt.decode('utf-8', errors='backslashreplace')
 
 
 def main():
