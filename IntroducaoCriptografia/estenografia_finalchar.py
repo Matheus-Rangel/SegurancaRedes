@@ -20,17 +20,9 @@ def insert_bit(b, data):
 def estenografia_c(image, txt):
     old_shape = image.shape
     image = np.reshape(image, (np.prod(image.shape)))
-    if len(image) - 32 < len(txt) * 9:
-        raise SmallImageException
     txt = txt.encode('utf-8')
-    txt_size = len(txt)
     byte_image_index = 0
-    while byte_image_index < 32:
-        b = image[byte_image_index]
-        b = insert_bit(b, txt_size)
-        image[byte_image_index] = b
-        txt_size = txt_size >> 1
-        byte_image_index += 1
+    txt.append(3)
     for byte_text_index in range(len(txt)):
         c = txt[byte_text_index]
         for i in range(8):
@@ -45,17 +37,10 @@ def estenografia_c(image, txt):
 
 def estenografia_d(image):
     image = np.reshape(image, (np.prod(image.shape)))
-    txt_size = 0
     txt = bytearray()
     byte_image_index = 0
-    while byte_image_index < 32:
-        txt_size = txt_size >> 1
-        b = image[byte_image_index]
-        txt_size += (b % 2) * (2 ** 31)
-        byte_image_index += 1
-    if len(image) - 32 < txt_size * 9:
-        raise SmallImageException
-    for byte_text_index in range(txt_size):
+    c = 0
+    while c != 3:
         c = 0
         for i in range(8):
             c = c >> 1
@@ -64,13 +49,13 @@ def estenografia_d(image):
             byte_image_index += 1
         txt.append(c)
         byte_image_index += 1
-    return txt.decode('utf-8')
+    return txt.decode('utf-8', errors="replace")
 
 
 def main():
     """
-    Implementacao com tamanho do texto escondido nos primeiros pixeis
-    argv 1: -d para ler o texto da imagem, -c para gravar o texto na imagem
+    Implementacao com caracter terminal
+    argv 1: modo de -d para ler o texto da imagem, -c para gravar o texto na imagem
     argv 2: caminho da imagem
     no modo -d
     argv 3: caminho do arquivo onde o programa salvara o texto
